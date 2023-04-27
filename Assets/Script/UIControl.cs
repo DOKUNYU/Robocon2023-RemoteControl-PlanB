@@ -36,6 +36,8 @@ using UnityEngine.UI;
         public int counter;
         public string oldLog;
 
+        public Text stop;
+
         private static UIControl _instance;
         
         public static UIControl Instance()
@@ -133,12 +135,12 @@ using UnityEngine.UI;
             {
                 text.text="ch1: "+send[0]+"\n"+
                           "ch2: "+send[1]+"\n"+
-                          "ch2: "+send[2]+"\n"+
-                          "ch2: "+send[3]+"\n"+
-                          "ch2: "+send[4]+"\n"+
-                          "ch2: "+send[5]+"\n"+
-                          "ch2: "+send[6]+"\n"+
-                          "ch2: "+send[7]+"\n";
+                          "ch3: "+send[2]+"\n"+
+                          "ch4: "+send[3]+"\n"+
+                          "ch5: "+send[4]+"\n"+
+                          "ch6: "+send[5]+"\n"+
+                          "ch7: "+send[6]+"\n"+
+                          "ch8: "+send[7]+"\n";
             }
             else
             {

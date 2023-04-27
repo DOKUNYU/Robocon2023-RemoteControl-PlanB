@@ -52,17 +52,18 @@ public class InputManager : MonoBehaviour
             }
             
             
-            isSending = false;
+            isSending = true;
             count = 0;
             //_intTime = 0;
             value = Array.Empty<byte>();
             send = new int[8];
+            StopSend();
 
 
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
             //Debug.Log("SA  "+SAValue);
             PresentCOM = TestUI.GetCom();
@@ -100,6 +101,14 @@ public class InputManager : MonoBehaviour
             isSending = !isSending;
             value = Array.Empty<byte>();
             count = 0;
+            if (!isSending)
+            {
+                TestUI.stop.text = "开始接收";
+            }
+            else
+            {
+                TestUI.stop.text = "停止接收";
+            }
         }
         
 

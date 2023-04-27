@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - TestConsole
     - UIControl
     Unity.InputSystem.dll:
-    - UnityEngine.InputSystem.Editor.InputDebuggerWindow
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
@@ -220,7 +219,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 151ed2dab9be8c9c0f99e0642f2f0172
+      Hash: 76d6fafac0f8337e1f08f7d6a473bc75
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIControl
