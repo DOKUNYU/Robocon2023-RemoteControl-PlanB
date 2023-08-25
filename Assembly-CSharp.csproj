@@ -105,6 +105,9 @@
  <Reference Include="UnityEngine.ClothModule">
  <HintPath>E:/Unity/2020.3.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.CloudFoundationModule">
+ <HintPath>E:/Unity/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CloudFoundationModule.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.ClusterInputModule">
  <HintPath>E:/Unity/2020.3.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
  </Reference>

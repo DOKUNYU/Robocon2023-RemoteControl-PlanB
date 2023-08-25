@@ -279,7 +279,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 51f9d61db6133cb7e6e40282eeb70a36
+      Hash: fcbeda23338ea23ca5f2a396ff6da8fa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InputManager
@@ -742,4 +742,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: F:/unitybuild/joysticks/joystick.exe
+  playerPath: F:/unitybuild/joystick4/joystick.exe

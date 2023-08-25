@@ -23,7 +23,9 @@ public class InputManager : MonoBehaviour
         public bool isSending;
         public int count;
         public byte[] value; 
-        public int[] send; 
+        public int[] send;
+
+        public float time = 0;
 
         //private float _intTime;
         private void Awake()
@@ -65,6 +67,15 @@ public class InputManager : MonoBehaviour
         // Update is called once per frame
         void FixedUpdate()
         {
+            if (isSending)
+            {
+                time += Time.fixedDeltaTime;
+            }
+            else
+            {
+                time = 0;
+            }
+            
             //Debug.Log("SA  "+SAValue);
             PresentCOM = TestUI.GetCom();
             TestUI.SetSlider(SAValue,SBValue,SDValue);
@@ -72,18 +83,19 @@ public class InputManager : MonoBehaviour
             TestUI.SetStick(THRValue,RUDValue,AILValue,ELEValue);
             TestUI.SetTMPStick(THRValue,RUDValue,AILValue,ELEValue);
             TestUI.SetDevice(Controller);
-            if (isSending)
+            if (isSending && time>0.04f)
             {
                 if (PresentCOM != null && PresentCOM!="COM3" && PresentCOM!="COM4")
                 {
                     Send(THRValue);
                     Send(RUDValue);
-                    Send(AILValue);
-                    Send(ELEValue);
+                    Send(-AILValue);
+                    Send(-ELEValue);
                     Send(SAValue);
                     Send(-SBValue);
                     Send(0f);
                     Send(-SDValue);
+                    time = 0;
                 }
             }
 
